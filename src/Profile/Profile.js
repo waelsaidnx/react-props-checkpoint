@@ -2,7 +2,9 @@ import {Button, Card } from "react-bootstrap";
 import propTypes from "prop-types";
 
 const ProfileCard= ({fullName, Bio, Profession, showAlert, children}) => {
-
+     showAlert = () => {
+        alert('Hello' +' '+ fullName);
+      }
     return (
         <div style={{position:'center', marginLeft:"40%", marginTop:50}}>
          <Card style={{ width: '13rem', border:"solid",borderColor:"darkBlue", borderRadius:10, position:"center", backgroundColor:'#3BB0BA', padding:10}}>
